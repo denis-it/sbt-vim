@@ -17,8 +17,7 @@
 
 " TODO warn the user (and do nothing else) if Python is not supported
 let s:pysrc = fnameescape(expand("<sfile>:h") . "/../python/sbt-vim.py")
-exec "pyfile" s:pysrc
+exec "py3file" s:pysrc
 
 cab sbtc py sbt_compile()
 cab sbtt py sbt_test()
-
